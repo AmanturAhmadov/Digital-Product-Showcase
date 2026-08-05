@@ -2,13 +2,16 @@ body {
     background-color: rgb(21, 20, 26);
     color: white;
 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Helvetica';
 }
 
 .neon-text {
-    text-shadow: 0px 0px 8px;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 100px;
+    z-index: 2;
+    position: absolute;
+    top: 80%;
+    left: 1%;
 }
 
 .align {
@@ -18,4 +21,42 @@ body {
 .media {
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.hero-media {
+    z-index: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+nav {
+    z-index: 2;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding-top: 20px;
+}
+
+nav a {
+    color:white;
+    font-size: 20px;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding-top: 20px;
 }
