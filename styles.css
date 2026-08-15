@@ -11,7 +11,7 @@ body {
     z-index: 2;
     position: absolute;
     top: 75%;
-    left: 23%;
+    left: 33%;
     text-shadow: 3px 3px 8px black, 0px 0px 7px white;
     letter-spacing: 2px;
 }
@@ -104,7 +104,11 @@ nav span {
 }
 
 .card-image:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     border-color: rgb(197, 197, 197);
-    box-shadow: 3px 3px 2px black;
+    box-shadow: 4px 4px 3px rgb(67, 67, 67);
+}
+
+.card-info {
+    font-size:larger;
 }
