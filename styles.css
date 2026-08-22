@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(21, 20, 26);
+    background-color: rgb(21, 21, 21);
     color: white;
 
     font-family: 'Helvetica';
@@ -18,7 +18,7 @@ body {
 
 .neon-text {
     font-weight: bold;
-    font-size: 75px;
+    font-size: 100px;
     text-shadow: 3px 3px 8px black, 0px 0px 7px white;
     letter-spacing: 2px;
 }
@@ -131,4 +131,30 @@ p {
     font-size: 26px;
     text-align: left;
     margin-left: 30%;
+}
+
+/* FAQ section styling */
+
+.FAQ-container {
+    font-size: 26px;
+}
+
+.FAQ-item {
+    background-color: rgb(35, 35, 35);
+    border: 3px solid rgb(29, 29, 29);
+    border-radius: 3px;
+    width: 500px;
+    height: 50px;
+    padding-top: 20px
+}
+.FAQ-item:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+.question-button {
+    font-size: 26px;
+}
+
+.answer {
+    font-size: 26px;
 }
