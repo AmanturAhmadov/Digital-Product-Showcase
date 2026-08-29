@@ -1,0 +1,32 @@
+/* Keeps images responsive so they don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Container to center everything on the page */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Default row: places items side-by-side */
+  .row {
+    display: flex;
+    align-items: center; /* Vertically centers image and text */
+    gap: 30px;           /* Space between image and text */
+    margin-bottom: 40px; /* Space between rows */
+  }
+  
+  /* Reverses the direction: right item moves to left, left moves to right */
+  .row.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Makes both halves take equal width (50% each) */
+  .media, 
+  .text {
+    flex: 1;
+  }
