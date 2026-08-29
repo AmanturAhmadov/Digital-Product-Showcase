@@ -220,3 +220,14 @@ nav span {
         transform: none;
     }
 }
+
+/* FEATURES PAGE */
+
+.features-heading {
+    text-align: center;
+    margin-top: 75px;
+    font-weight: bold;
+    font-size: clamp(40px, 7vw, 72px);
+    text-shadow: 3px 3px 8px black, 0px 0px 7px white;
+    letter-spacing: 2px;
+}
