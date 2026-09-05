@@ -269,3 +269,7 @@ img {
     flex: 1;
     text-align: right;
 }
+
+img:hover {
+    box-shadow: 4px 4px 4px rgb(34, 34, 34);
+}
