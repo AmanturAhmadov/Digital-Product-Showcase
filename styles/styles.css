@@ -14,7 +14,6 @@ body {
     text-align: center;
 }
 
-
 .hero-text {
     font-weight: bold;
     font-size: clamp(48px, 8vw, 100px);
