@@ -273,3 +273,46 @@ img {
 img:hover {
     box-shadow: 4px 4px 4px rgb(34, 34, 34);
 }
+
+/* FOOTER STYLES */
+
+footer {
+    background-color: rgb(26, 26, 26);
+    border-top: 1px solid #ffffff;
+    padding: 50px 40px;
+    padding-top: 10px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-content {
+    margin: 0 auto;
+    flex: 1;
+}
+
+footer a {
+    color: rgb(102, 102, 102);
+}
+
+footer a:hover {
+    color: rgb(158, 158, 158);
+}
+
+.complaint-form {
+    max-width: 300px;
+    flex: 1;
+}
+
+.complaint-single {
+    width: 177px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 15px;
+}
