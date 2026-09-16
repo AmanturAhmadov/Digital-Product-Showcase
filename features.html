@@ -72,20 +72,23 @@
             <section class="complaint-form">
 
                 <h3>Submit a Complaint</h3>
-                <form></form>
-                <input class="complaint-single" type="email" placeholder="Your E-Mail" required>
-                <br>
-                <input class="complaint-single" type="text" placeholder="Your Name" required>
-                <textarea rows="5" placeholder="Describe your complaint..." required></textarea>
-                <br>
-                <button>Submit</button>
+                <form id="complaintForm">
+                    <input id="userEmail" class="complaint-single" type="email" placeholder="Your E-Mail" required>
+                    <br>
+                    <input id="userName" class="complaint-single" type="text" placeholder="Your Name" required>
+
+                    <textarea id="response" rows="5" placeholder="Describe your complaint..." required></textarea>
+                    <br>
+                    <button>Submit</button>
+                </form>
+                
+                <script src="scripts/script.js"></script>
 
             </section>
 
         </footer>
 
     </main>
-
 </body>
 
 </html>
