@@ -316,3 +316,32 @@ input {
 button {
     margin-top: 15px;
 }
+
+/* SIGN IN */
+
+.sign-in {
+    background-color: rgb(29, 29, 29);
+    border: 2px solid rgb(67, 67, 67);
+    width: 300px;
+    height: 270px;
+    margin-left: 440px;
+    margin-top: 200px;
+}
+
+.sign-in-text {
+    text-align: center;
+}
+
+.sign-in-input {
+    margin-left: 44px;
+}
+
+.email {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.sign-up-redirect {
+    color: rgb(73, 72, 72);
+    margin: 40px 0px 40px 80px;
+}

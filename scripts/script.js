@@ -15,8 +15,14 @@ form.addEventListener("submit", function(event){
     const name = userNameInput.value;
     const response = responseInput.value;
 
+    // 4.1. VALIDATION CHECK
+    if(email.trim() === "" || name.trim() === "" || response.trim() === ""){
+        alert("Please fill out all fields.");
+        return;
+    }
+
     // 5. REACT TO IT (alert message)
-    alert("Submitted");
+    alert(`Submitted! Thank you ${name}`);
 
     // 6. RESET THE FORM FIELDS
     form.reset();
