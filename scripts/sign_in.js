@@ -14,26 +14,18 @@ form.addEventListener("submit", function(event){
         return;
     }
 
-    /** PACK A TEST ACCOUNT
-    const testAccount = {
-        userEmail: "test@gmail.com",
-        userPassword: "111"
-    }
+    const users = JSON.parse(localStorage.getItem("porscheUser")) || [];
 
-    localStorage.setItem("testUser", JSON.stringify(testAccount));
-    **/
-
-    const savedUserData = localStorage.getItem("porscheUser");
-
-    if(!savedUserData){
+    if(users.length === 0){
         alert("No account found, please sign up first.");
         return;
     }
 
-    const savedUser = JSON.parse(savedUserData);
+    const matchedUser = users.find(user => user.userEmail === email && user.userPassword === password);
 
-    if(savedUser.userEmail === email && savedUser.userPassword === password){
+    if(matchedUser){
         alert("You're signed in!");
+        localStorage.setItem("currentUser", JSON.stringify(matchedUser))
         form.reset();
         window.location.href = "index.html";
     }
