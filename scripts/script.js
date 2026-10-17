@@ -10,6 +10,20 @@ form.addEventListener("submit", function(event){
     // 3. STOP THE PAGE FROM RELOADING
     event.preventDefault();
 
+    // --- AUTHORIZATION CHECK
+    const currentUserTag = JSON.parse(localStorage.getItem("currentUser"));
+
+    if(!currentUserTag){
+        alert("Access denied, you must be signed in to submit a complaint.");
+        window.location.href = "sign_in.html";
+        return;
+    }
+    // ---
+
+    if(currentUserTag.userEmail){
+        userEmailInput.value = currentUserTag.userEmail;
+    }
+
     //4. GRAB THE VALUE FROM THE INPUTS
     const email = userEmailInput.value;
     const name = userNameInput.value;
@@ -25,6 +39,8 @@ form.addEventListener("submit", function(event){
     alert(`Submitted! Thank you ${name}`);
 
     // 6. RESET THE FORM FIELDS
-    form.reset();
+    // form.reset();
+    userNameInput.value = "";
+    responseInput.value = "";
 
 });
